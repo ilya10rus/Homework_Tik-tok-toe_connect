@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.Board {
+		width: 300px;
+		height: 300px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.Start_btn {
+		width: 200px;
+		height: 35px;
+		margin-top: 25px;
+		color: #fff;
+		outline: none;
+		background: #222222;
+		border: 1px solid #fff;
+		cursor: pointer;
+	}
+	.Start_btn:hover {
+		color: #222222;
+		background: #fff;
+		transition: 0.4s all ease;
+	}
+	.Wrapper {
+		min-height: 100vh;
+		width: 100%;
+		background: #222222;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+	.Square {
+		width: 100px;
+		height: 100px;
+		background: #fff;
+		cursor: pointer;
+		outline: none;
+		font-size: 50px;
+		justify-content: center;
+		align-items: center;
+	}
+	.Text {
+		font-size: 60px;
+		font-weight: bold;
+		color: #fff;
+	}
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
